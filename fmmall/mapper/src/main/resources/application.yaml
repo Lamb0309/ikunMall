@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/fmmall
+      username: root
+      password: 123456
+mybatis:
+  mapper-locations: classpath:mappers/*Mapper.xml
+  type-aliases-package: com.qfedu.fmmall.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+logging:
+  level:
+    io.swagger.models.parameters.AbstractSerializableParameter: error
